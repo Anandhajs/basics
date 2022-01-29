@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head><title>This is my first program</title>
-    
+    <style>
+#image{
+          
+          background-color: rgb(255,110,180);
+          background-image: url('image/nature.jpg.jpg');
+          background-size: 150%;
+          background-repeat: no-repeat;
+          /* background-attachment: fixed; */
+}
+          </style>
 </head>
-<body style=background-color:green;>
-    <img src="nature.jpg" alt="the image is not uploaded" width="100px">
+<body id="image" >
+  <center> <video width="50%" height="50%" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video></center> 
 <center><h1><b><u>Employe Table</u></b></h1></center><br>
   <hr><br>
 <center><table  border="1" cellspacing="5" cellpadding="10">
@@ -40,9 +51,10 @@
         <td>Senior Developer</td>
     </tr>
   </table></center><br>
+  
   <hr>
 <form>
-<h1 id="demo"><b>Employee Registration</b></h1>
+<h1><b>Employee Registration</b></h1>
 <lable for="fname">First name:</lable>
 <input type="text" name="fname" placeholder="Enter First Name" required><br><br>
 <lable for="lname">Last name:</lable>
@@ -73,5 +85,6 @@
 <input type="submit" value="submit"><br><br>
 <input type="button" value="Click"><br>
 </form>
+</div>
 </body>
 </html>
